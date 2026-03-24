@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I'm Sorry — [Her Name]</title>
+    <title>I'm Sorry — ""💕Meri Javeria G💕""</title>
     <style>
         body {
             font-family: 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #30cfd0 0%, #330867 100%)
             color: white;
             text-align: center;
             padding: 50px 20px;
@@ -49,27 +49,195 @@
             font-weight: bold;
         }
     </style>
+    <!-- Dudu Sorry Animation -->
+<div class="dudu-container">
+    <img src="dudu.png" alt="Dudu says sorry" class="dudu-character">
+    <div class="speech-bubble">
+        <p>I'm sorry... 🥺</p>
+        <div class="bubble-tail"></div>
+    </div>
+</div>
+
+<style>
+    .dudu-container {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        animation: duduEnter 2s ease-out, duduBounce 3s infinite;
+    }
+    
+    @keyframes duduEnter {
+        0% {
+            transform: translateX(200px) scale(0);
+            opacity: 0;
+        }
+        60% {
+            transform: translateX(-20px) scale(1.1);
+        }
+        100% {
+            transform: translateX(0) scale(1);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes duduBounce {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-15px);
+        }
+    }
+    
+    .dudu-character {
+        width: 150px;
+        height: auto;
+        filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
+        transition: transform 0.3s;
+        cursor: pointer;
+    }
+    
+    .dudu-character:hover {
+        transform: scale(1.1) rotate(-5deg);
+    }
+    
+    .speech-bubble {
+        position: absolute;
+        top: -80px;
+        left: -100px;
+        background: white;
+        color: #333;
+        padding: 15px 20px;
+        border-radius: 20px;
+        font-size: 16px;
+        font-weight: bold;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        animation: bubblePop 1s ease-out 2s both, bubbleFloat 2s infinite 3s;
+        white-space: nowrap;
+    }
+    
+    @keyframes bubblePop {
+        0% {
+            transform: scale(0);
+            opacity: 0;
+        }
+        80% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes bubbleFloat {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-5px); }
+    }
+    
+    .bubble-tail {
+        position: absolute;
+        bottom: -10px;
+        right: 30px;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 15px solid white;
+    }
+    
+    /* Tears animation */
+    .tear {
+        position: absolute;
+        width: 8px;
+        height: 12px;
+        background: #74b9ff;
+        border-radius: 50%;
+        opacity: 0;
+        animation: tearDrop 2s infinite;
+    }
+    
+    .tear:nth-child(1) {
+        top: 60px;
+        left: 50px;
+        animation-delay: 0.5s;
+    }
+    
+    .tear:nth-child(2) {
+        top: 60px;
+        left: 90px;
+        animation-delay: 1s;
+    }
+    
+    @keyframes tearDrop {
+        0% {
+            transform: translateY(0) scale(0);
+            opacity: 0;
+        }
+        20% {
+            opacity: 1;
+            transform: scale(1);
+        }
+        80% {
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(30px) scale(0.5);
+            opacity: 0;
+        }
+    }
+    
+    /* Click to say sorry again */
+    .dudu-character:active {
+        transform: scale(0.9);
+    }
+</style>
+
+<script>
+    // Dudu says different sorry messages on click
+    const messages = [
+        "I'm really sorry... 🥺",
+        "Please forgive me? 💕",
+        "I miss you... 😢",
+        "You're my best friend! ❤️",
+        "I'll do better! ✨"
+    ];
+    
+    let messageIndex = 0;
+    
+    document.querySelector('.dudu-character').addEventListener('click', function() {
+        const bubble = document.querySelector('.speech-bubble p');
+        messageIndex = (messageIndex + 1) % messages.length;
+        bubble.textContent = messages[messageIndex];
+        
+        // Create hearts on click
+        for(let i = 0; i < 5; i++) {
+            setTimeout(() => createHeart(), i * 100);
+        }
+    });
+</script>
 </head>
 <body>
     <div class="container">
-        <h1>I'm Sorry, [Her Name]</h1>
+        <h1>I'm Sorry, Mine Javeria Wife G</h1>
         <p>I made this for you because words alone felt too small.</p>
         
         <div class="note">
-            <p>Dear [Her Name],</p>
-            <p>[Write your handwritten-style apology here...]</p>
-            <p>— Usman</p>
+            <p>Dear Mine darling G,</p>
+            <p>""Ma manta hun mana boht 💝galat kia mam ggg maaf kro apny is bewakof ❤🥰Usman Husband ko please!! Meri to Duniya hona ap""</p>
+            <p>— ""Apka 💞😔Usman""</p>
         </div>
 
-        <h3>What You Mean to Me</h3>
-        <div class="memory">[Memory 1]</div>
-        <div class="memory">[Memory 2]</div>
-        <div class="memory">[Memory 3]</div>
+        <h3>Apky liye apka Usman💝😊🎀Apka DUDU💝Apki duniya sb kuch krny ko tyair haii😭❤</h3>
+        <div class="memory">memory.jpg</div>
+        <div class="memory">me.png</div>
+        <div class="memory">bubu.jpg</div>
 
-        <h3>🎵 This Song Reminded Me of Us</h3>
+        <h3>🎵<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/5pAPEuGi48iywzO2NT5Ddt?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></h3>
         <!-- Embed Spotify or YouTube here -->
 
-        <a href="mailto:your-email@example.com" class="button">Reply to Me</a>
+        <a href="mailto:your-email@example.com" class="button">agr maaf kr dia to please muskura dena bhari mehnat sy sb kia hai💞😊💕</a>
     </div>
 </body>
 </html>
